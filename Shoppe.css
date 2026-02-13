@@ -1,0 +1,116 @@
+body {
+	margin: 0;
+	font-family: "Noto Sans", "Roboto", "Arvo", "Montserrat";
+}
+h2 {
+	font-family: "Montserrat";
+	font-size: 40px;
+}
+.categories {
+	height: 250px;
+	text-align: center;
+    background-color: #cca9b3;
+}
+.cat-con {
+	display: flex;
+	width: 90%;
+	margin: 0 auto;
+	padding: 10px;
+}
+.cat {
+	flex: 1;
+	text-align: center;
+}
+.cat-img {
+    border-radius: 100px;
+    border: solid 4px #008080;
+    padding: 10px;
+    height: 50px;
+}
+.top-prod {
+	background-color: #661212;
+	text-align: center;
+	padding: 10px 0px;
+}
+.main {
+	background-color: #6b1818;
+	display: flex;
+	justify-content: center;
+}
+.main-con {
+	text-align: left;
+	width: 90%;
+	height: auto;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+}
+.prod-con:hover {
+    transform: scale(1.02);
+    opacity: 1;
+}
+.prod-con {
+    padding: 5px;
+    width: 250px;
+    position: relative;
+}
+.inner-prod-con {
+    background-color: #e8c1c1;
+    height: 100%;
+    overflow: none;
+}
+.prod-con img {
+    object-fit: cover;
+    height: 200px;
+    width: 90%;
+    overflow: none;
+    border-radius: 80px;
+    padding: 10px;
+
+}
+.rank {
+    position: absolute;
+    top: 10px;
+    margin-left: 10px;
+    background-color: rgba (255, 255, 255, .6);
+    z-index: 0;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+.prod-details {
+    padding: 10px;
+}
+.price {
+    color: red;
+    font-size: 20px;
+}
+.sold {
+    font-size: 12px;
+    color: gray;
+    text-align: right;
+}
+.prod-details i {
+    color: #ffc102;
+}
+@media(max-width: 403px) {
+    .top-prod {
+        width: 100px;
+        min-width: 430px;
+        margin-bottom: -2px;
+    }
+    .main-con {
+        width: 100%;
+        min-width: 430px;
+    }
+    .prod-con {
+        flex: 0 0 45%;
+    }
+}
